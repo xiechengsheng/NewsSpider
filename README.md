@@ -42,3 +42,5 @@ scrapy crawl [toutiao|netease|tencent]
 
 ### Demo展示
 ![Demo](https://github.com/lzjqsdd/NewsSpider/blob/master/data/show.png)
+
+### 搜索率差强人意，待优化
