@@ -10,6 +10,13 @@ sys.setdefaultencoding('utf-8')
 
 file = open(Global.content_dir)
 conn = sqlite3.connect('news.db')
+# 创建表
+conn.execute('''CREATE TABLE news 
+		(title TEXT NOT NULL,
+		 time TEXT NOT NULL,
+		 url TEXT NOT NULL);''')
+print "tabel 'news' created successfully!"
+
 while 1:
 	line = file.readline()
 	if not line:
